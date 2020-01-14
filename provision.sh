@@ -18,7 +18,7 @@ YELLOW='\033[0;33m'
 NC='\033[0m' # No Color
 
 # Bring the databases online.
-docker-compose up -d mysql mongo
+docker-compose $MAIN_DOCKER_COMPOSE_FILE up -d mysql mongo
 
 # Ensure the MySQL server is online and usable
 echo "Waiting for MySQL"
